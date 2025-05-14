@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>c489f099-db27-4ca8-a62d-bf47adecd499</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,4 +32,3 @@
   </ItemGroup>
 
 </Project>
-    <OutputType>Library</OutputType>
