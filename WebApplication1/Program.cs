@@ -34,6 +34,9 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Указываем порт перед Build()
+builder.WebHost.UseUrls("http://0.0.0.0:8080");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -51,8 +54,5 @@ app.UseCors("AllowAll");
 app.UseAuthorization();
 
 app.MapControllers();
-
-// Добавь это, чтобы приложение слушало на всех интерфейсах
-builder.WebHost.UseUrls("http://0.0.0.0:8080");
 
 app.Run();
