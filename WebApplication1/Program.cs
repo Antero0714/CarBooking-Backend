@@ -27,7 +27,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://Maksimov.somee.com")
+        policy.WithOrigins("http://Maksimov.somee.com", "http://212.233.90.38")
               .AllowAnyMethod()
               .WithHeaders("Content-Type")
               .AllowCredentials();
